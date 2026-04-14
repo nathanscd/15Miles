@@ -1,11 +1,14 @@
 import './style/Init.css'
+import Header from '../components/Header'
 
 const Init = () => {
   return (
     <div className="init-wrapper">
-      <div className="initial-section">
-        <img src="/logo.svg" alt="Logo" />
-        <h1>Transformando Leads em vendas.</h1>
+      <Header />
+      <div className="initial-section"></div>
+
+      <div className='presentation'>
+        <h1>Always <img src="/logo.svg" /> ahead </h1>
       </div>
     </div>
   )
