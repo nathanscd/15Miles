@@ -14,8 +14,7 @@
   justify-content: space-around;
   -webkit-backdrop-filter: blur(10px);
   clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
-  backdrop-filter: blur(10px);
-  
+  backdrop-filter: blur(10px);  
   
   background: linear-gradient(270deg, black, #d9110366, black, rgba(155, 0, 0, 0.245), black);
   background-size: 500% 500%;

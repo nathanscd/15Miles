@@ -3,6 +3,7 @@
     background: url(/entrance.png);
     background-size: cover;
     background-position: center;
+    margin: 50px 100px;
     height: 100vh;
   }
   .presentation{
