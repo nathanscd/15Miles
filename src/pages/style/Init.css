@@ -3,13 +3,12 @@
     background: url(/entrance.png);
     background-size: cover;
     background-position: center;
-    margin: 50px 100px;
-    height: 100vh;
+    height: 120vh;
   }
   .presentation{
     height: 100dvh;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     text-align: center;
     font-family: 'Syne', serif;
     font-size: 2.5rem;
