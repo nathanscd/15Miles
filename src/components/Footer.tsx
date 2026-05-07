@@ -5,26 +5,28 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="footer glass">
-      <div className="container footer-content">
-        <div className="footer-brand">
-          <span className="brand-name">FIFTEEN MILES</span>
-          <p className="brand-tagline">INTERSTELLAR TECH STUDIO</p>
+    <footer className="footer-white">
+      <div className="container footer-content-v2">
+        <div className="footer-brand-v2">
+          <span className="brand-name">15MILES</span>
+          <p className="brand-tagline">SPACE PORTAL STUDIO</p>
         </div>
         
-        <div className="footer-metadata">
-          <div className="metadata-item">
-            <span className="meta-label">STATUS:</span>
-            <span className="meta-value glow-text">OPERATIONAL</span>
+        <div className="footer-links-v2">
+          <div className="link-group">
+            <h4>STUDIO</h4>
+            <a href="/services">Services</a>
+            <a href="/about">About</a>
           </div>
-          <div className="metadata-item">
-            <span className="meta-label">COORD:</span>
-            <span className="meta-value">40.7128° N, 74.0060° W</span>
+          <div className="link-group">
+            <h4>CONTACT</h4>
+            <a href="/contact">Get in Touch</a>
+            <p>hello@15miles.tech</p>
           </div>
         </div>
         
-        <div className="footer-copyright">
-          <p>© {currentYear} 15MILES. ALL SYSTEMS GO.</p>
+        <div className="footer-bottom-v2">
+          <p>© {currentYear} 15MILES. ALL SYSTEMS OPERATIONAL.</p>
         </div>
       </div>
     </footer>

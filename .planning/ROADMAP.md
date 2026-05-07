@@ -20,3 +20,9 @@
 ## Phase 4: Launch Readiness
 - [x] SEO Meta tags and Social preview images.
 - [x] Final browser testing.
+
+## Phase 5: Space Portal Redesign (v2)
+- [ ] Implement White & Raleway Design System (index.css)
+- [ ] Create `Portal` component for space-themed content sections
+- [ ] Refactor pages to "Spaceship Interior" concept
+- [ ] Final visual polish and transitions

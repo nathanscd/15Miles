@@ -1,89 +1,60 @@
 .header {
   position: fixed;
-  top: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 1200px;
-  height: 70px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-content {
+  height: 80px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  background: var(--glass-bg);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border: 1px solid var(--glass-border);
-  border-radius: 50px;
-  z-index: 1000;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-link {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
+.logo {
+  font-family: var(--font-main);
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -1px;
 }
 
-.logo-link img {
-  width: 32px;
-  height: 32px;
-}
-
-.brand-name {
-  font-family: var(--font-heading);
-  font-weight: 800;
-  letter-spacing: 2px;
-  font-size: 1.2rem;
-  background: linear-gradient(to right, #fff, #3b82f6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.logo-accent {
+  color: var(--blue);
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 3rem;
 }
 
-.nav-link {
-  font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--text-gray);
-  position: relative;
-  padding: 0.5rem 0;
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 0.95rem;
   transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-  color: var(--text-white);
+.nav-links a:hover {
+  color: var(--text);
 }
 
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: var(--primary-blue);
-  transition: width 0.3s ease;
+.nav-cta {
+  background: var(--text);
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700 !important;
 }
 
-.nav-link:hover::after {
-  width: 100%;
-}
-
-@media (max-width: 768px) {
-  .brand-name {
-    display: none;
-  }
-  .nav-links {
-    gap: 1rem;
-  }
-  .nav-link {
-    font-size: 0.7rem;
-  }
+.nav-cta:hover {
+  background: var(--blue);
 }

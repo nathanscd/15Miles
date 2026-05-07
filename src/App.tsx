@@ -15,7 +15,6 @@ const AppContent: React.FC = () => {
   
   return (
     <>
-      <Starfield />
       <Header />
       <main className="app-main">
         <Routes>

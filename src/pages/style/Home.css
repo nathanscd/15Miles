@@ -1,129 +1,139 @@
-.home-container {
-  overflow: hidden;
-}
-
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.home-v2 {
   padding-top: 80px;
 }
 
-.hero-content {
-  max-width: 1000px;
+.hero-v2 {
+  padding: 10rem 2rem;
+  text-align: center;
 }
 
-.hero-title {
-  font-family: var(--font-display);
-  font-size: clamp(2.5rem, 8vw, 5.5rem);
-  font-weight: 900;
-  line-height: 0.95;
-  letter-spacing: -2px;
-  margin: 2rem 0;
-  text-transform: uppercase;
-}
-
-.glow-text {
-  background: linear-gradient(to bottom, #fff, var(--blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 40px rgba(99, 179, 255, 0.4);
-}
-
-.hero-description {
-  font-size: 1.25rem;
-  color: var(--text-gray);
-  max-width: 650px;
-  margin: 0 auto 3rem;
-  line-height: 1.6;
-}
-
-.hero-cta {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
-/* Mission Section Grid */
-.mission-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.large-text {
-  font-size: 1.5rem;
-  line-height: 1.6;
-  color: var(--white);
-}
-
-.mission-stats {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.stat-card {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.stat-value {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  color: var(--blue);
-}
-
-.stat-label {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  color: var(--muted);
-  letter-spacing: 2px;
-}
-
-/* Tech Specs Grid */
-.tech-specs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.tech-item {
-  padding: 3rem 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.tech-label {
+.tagline {
   font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--blue);
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 1.5rem;
 }
 
-.tech-item h3 {
-  font-family: var(--font-display);
+.hero-v2 h1 {
+  font-size: clamp(3rem, 10vw, 6rem);
+  line-height: 0.9;
+  margin-bottom: 2.5rem;
+}
+
+.hero-v2 p {
   font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 3.5rem;
+}
+
+/* Portal Styles */
+.portal-main {
+  margin: 4rem 2rem;
+}
+
+.portal-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portal-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--blue);
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.portal-inner h2 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.blue-text {
+  color: var(--blue);
+}
+
+.portal-desc {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 4rem;
+}
+
+.portal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.portal-card {
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  text-align: left;
+}
+
+.portal-card h3 {
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+/* Interior Section */
+.interior-section {
+  padding: 10rem 2rem;
+}
+
+.interior-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.interior-text h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.interior-text p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.interior-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-num {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--text);
+}
+
+.stat-name {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--blue);
   letter-spacing: 1px;
 }
 
-.tech-item p {
-  color: var(--text-gray);
-  line-height: 1.6;
-}
-
 @media (max-width: 992px) {
-  .mission-grid {
+  .interior-content {
     grid-template-columns: 1fr;
+    gap: 4rem;
   }
-}
-
-@media (max-width: 768px) {
-  .hero-cta {
-    flex-direction: column;
+  .portal-grid {
+    grid-template-columns: 1fr;
   }
 }
