@@ -1,23 +1,23 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import './Style/Header.css';
 
-const Header = () => {
-
+const Header: React.FC = () => {
   return (
-      <nav className='header'>
-        <Link to="/" className='name'>
-          <img src="logo.svg" />
-        </Link>
+    <nav className='header'>
+      <Link to="/" className='logo-link'>
+        <img src="/15Miles.svg" alt="15Miles Logo" />
+        <span className="brand-name">FIFTEEN MILES</span>
+      </Link>
 
-        <div className="desktop-menu">
-          <Link to='/' className="nav-link" data-replace="Home"><span>Home</span></Link>
-          <Link to='/about' className="nav-link" data-replace="About"><span>About</span></Link>
-          <Link to='/products' className="nav-link" data-replace="Products"><span>Products</span></Link>
-          <Link to='/buy' className="nav-link" data-replace="Buy"><span>Buy</span></Link>
-          <Link to='/contact' className="nav-link" data-replace="Contact"><span>Contact</span></Link>
-        </div>
-      </nav>
-  )
+      <div className="nav-links">
+        <Link to='/' className="nav-link">Home</Link>
+        <Link to='/services' className="nav-link">Services</Link>
+        <Link to='/about' className="nav-link">About</Link>
+        <Link to='/contact' className="nav-link">Contact</Link>
+      </div>
+    </nav>
+  );
 };
 
 export default Header;

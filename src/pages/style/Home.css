@@ -1,0 +1,129 @@
+.home-container {
+  overflow: hidden;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero-content {
+  max-width: 1000px;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -2px;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+
+.glow-text {
+  background: linear-gradient(to bottom, #fff, var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 40px rgba(99, 179, 255, 0.4);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: var(--text-gray);
+  max-width: 650px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Mission Section Grid */
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.large-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--white);
+}
+
+.mission-stats {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.stat-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--blue);
+}
+
+.stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 2px;
+}
+
+/* Tech Specs Grid */
+.tech-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tech-item {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tech-label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--blue);
+}
+
+.tech-item h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.tech-item p {
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-cta {
+    flex-direction: column;
+  }
+}
